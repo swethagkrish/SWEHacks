@@ -8,7 +8,7 @@ library(shinythemes)
 source("ratings_data.R")
 
 my_ui <- fluidPage(
-  theme = shinytheme("superhero"),
+  theme = shinytheme("slate"),
   tabsetPanel(
     tabPanel(
       "Home",
@@ -44,7 +44,7 @@ my_ui <- fluidPage(
                say 72% of the words. Female characters make up 30% of the characters and say 28% of the words")
     ),
     tabPanel(
-      "Raical Comparison", 
+      "Racial Comparison", 
       titlePanel("Racial Representation in the Tech Industry"),
       p("Type in a movie that you are interested in learning about. Compare the 
                 number of words said by females characters to male characters"),
@@ -67,41 +67,42 @@ my_ui <- fluidPage(
       p("\"There is a lot of talk in the industry about teaching girls to code and recruiting more women for tech jobs.
         But without addressing sexual harassment and other forms of bias,
         tech companies won't be able to attract a more diverse workforce and retain those entering the field.\" - Ina Fried"),
+      p("In this section, we want to identify and bring awareness to major tech companies that have dealt with sexual harassment cases.
+        For our viewers, we want to arm you with the knowledge on how these companies have dealt with sexual harassment cases in the past.
+        To the victims that have had a similar experience, we want to let you know that you're not alone."),
       
       h2("Google"),
-      h4(em("\"Shareholders file lawsuit against Google over payouts to executives accused of sexual harassment\" - Casey Newton")),
-      h4(em("")),
+      p(em("\"Shareholders file lawsuit against Google over payouts to executives accused of sexual harassment\" - Casey Newton")),
+      p(em("")),
       
       h2("Facebook"),
-      p(""),
+      p(em("\"Chia Hong, the former Facebook employee who sued [Facebook], 
+        claims she suffered three years of harassment during stints as a program manager and technology partner.\" - Tom Huddleston Jr.")),
+      p(em("\"Facebook said on Friday that it would no longer force employees to settle sexual harassment claims in private arbitration,
+        making it the latest technology company to do away with a practice that critics say has stacked the deck against victims of harassment.\"
+        - Daisuke Wakabayashi and Jessica Silver-Greenberg")),
       
       h2("Amazon"),
-      p(""), 
+      p(em("\"Amazon Studios Chief Roy Price Suspended Amid Sexual-Harassment Accusations\" - Kim Masters")),
+      
+      h2("An Important Statistic"),
+      p("\"Certainly, the largest percentage of people — 85% — said they'd been harassed by a superior,
+      but 75% said they had been harassed by an equal, and 30% said they were targeted by a subordinate.\""),
       
       h2("Citations"),
       p("https://www.axios.com/tech-sexual-harassment-women-silicon-valley-1fa55b9c-2997-49cc-a869-d3cb7334a543.html"),
-      p("https://www.theverge.com/2019/1/10/18177445/google-shareholder-lawsuit-sexual-harassment-andy-rubin-me-too")
+      p("https://www.theverge.com/2019/1/10/18177445/google-shareholder-lawsuit-sexual-harassment-andy-rubin-me-too"),
+      p("http://fortune.com/2015/03/18/facebook-sex-discrimination/?fbclid=IwAR3unljDmmjrnNz247n01CdYrLzVn6ZXnfhfTjmZki6Jgbpcnpy3iUChiTI"),
+      p("https://www.nytimes.com/2018/11/09/technology/facebook-arbitration-harassment.html?fbclid=IwAR0Oaa7Uh1e-xSYOj_iPhTSP9o8nI9oTLkt9GEDM_01dXO1drC7VVZ3Nw6c"),
+      p("https://www.thedailybeast.com/amazon-studios-exec-accused-of-sexual-harassment?fbclid=IwAR1e1CGfBUQ1W3DcE4PhTbrtI1eSyRqsLYKQDqvxfYC2Q7qrKmmP78ZVWDA"),
+      p("https://www.buzzfeednews.com/article/doree/we-surveyed-hundreds-about-techs-harassment-problem?fbclid=IwAR21OBTodCfe3SF55VeKtrJ7pCt1RBrZnS8Jek-gTPQwYsnzmZb5JKdaCVQ")
     ),
     tabPanel(
       "Conclusion",
-      titlePanel(h1("Overall Analysis")),
-      p("Through our visualizations to becomes clear that there is gender disparity between males and females in movies.
-      A further analysis seems to show that while this difference does exist, the arguments for why it exists does not make sense. 
-      A common argument is that female-led films are received less positively by the audience,
-      but looking at the data male-led movies and female-led movies receive similar scores on IMDB. 
-      While male-led movies do make more money at the box office, there exists a substantial gap between the number of male-led and female-led movies.
-      But, if male-led and female-led movies recieve similar reception by the audience why is that male-led movies make more money?
-      Do more people go to male-led movies than female-led movies? 
-      Could it be that male-led movies have both a female and male audience, but female-led movies only have a female audience?
-      We can't answer that question with our current analysis and data, 
-      but our work reveals that there is a clear difference between gender representation in movies.
-      Understanding and recognizing that there is a problem is only the first step in finding solutions"),
-      h2("Future Explorations"),
-      p("To further explore this topic, it would be necessary to look at who is making the movies. 
-      What are the genders of the producers, screenwriters, and directors? 
-      How is that correlated to the representation that ends up in the film? 
-      Furthermore, we could look at film goers and learn about the gender make-up of a film's audience and what they think of the movie. 
-      We can try to determine maybe if there is a bias for or against female-led films, based on this data.")
+      titlePanel(
+        h1("Overall Analysis")
+      ),
+      p("")
     )
   )
 )
